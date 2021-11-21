@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import img1 from "./components/graphics/istockphoto2.jpg";
+import img2 from "./components/graphics/new_vitruvian_man_dock_icon_by_cmnixon_d4beq5n-fullview.jpg";
+import img3 from "./components/graphics/9a3b779797d9f8e434be134e0993809f.jpg";
+
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="Landing">
+      <Carousel images={[img1, img2, img3]} className="Carousel" />
+    </section>
   );
 }
 
